@@ -1,0 +1,26 @@
+.sale-section .carousel-button {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.sale-section .carousel-button.left {
+  left: 0;
+}
+
+.sale-section .carousel-button.right {
+  right: 0;
+}
+
+.sale-carousel {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  width: 200px;
+}
+
+
+

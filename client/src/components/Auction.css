@@ -1,0 +1,134 @@
+.auction-carousel {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  gap: 12px;
+  padding: 0.5rem 2.5rem; /* space for buttons */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: white;
+  border: none;
+  border-radius: 9999px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.carousel-button:hover {
+  background: #333;
+  color: white;
+}
+
+.carousel-button.prev {
+  left: 0;
+}
+
+.carousel-button.next {
+  right: 0;
+}
+
+.gradient-banner {
+  background: linear-gradient(to right, #2fc389, #332ab7);
+  color: white;
+  text-align: center;
+  padding: 0.75rem 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: 100%;
+  min-height: 4rem;
+}
+
+.custom-live-badge {
+  position: absolute;
+  top: 3.2rem;
+  left: 0.5rem;
+  display: flex;
+  z-index: 10;
+}
+
+.custom-live-wrapper {
+  background-color: #ef4444;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  font-size: 10px;
+  padding: 0.1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  height: 1.25rem;
+}
+
+.custom-live-text {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.auction-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+}
+
+.auction-img {
+  object-fit: contain;
+  background-color: #d1d5db;
+  border-radius: 0.375rem;
+}
+
+.auction-time {
+  margin-top: 0.5rem;
+  padding: 0.25rem 1rem;
+  background: #ff3366;
+  color: white;
+  font-weight: bold;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auction-price {
+  font-size: 0.85rem;
+  color: #444;
+  text-align: center;
+}
+
+.auction-price strong {
+  color: #2fc389;
+}
+
+.bid-now {
+  width: 90%;
+  margin: 0.75rem auto;
+  background-color: #1dbf73;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: block;
+}
+
+.bid-now:hover {
+  background-color: #18a05e;
+}

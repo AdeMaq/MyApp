@@ -1,0 +1,72 @@
+.download-prompt-container {
+  height: 48px;
+  width: 1200.67px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:#d0e7f5;
+  margin: 0 auto;
+  position: relative;
+}
+
+.download-prompt-left {
+  background: linear-gradient(90deg, #22c993 0%, #2b2e8b 100%);
+  border-radius: 0 32px 0 0;
+  padding: 10px 18px;
+  margin-right: 28px;
+  margin-left: 0px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+
+.download-prompt-question {
+  color: #fff;
+  font-weight: 600;
+}
+
+.download-prompt-right {
+  display: flex;
+  align-items: center;
+  color: #222;
+  border-radius: 0 32px 32px 0;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.download-prompt-link {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.download-prompt-ios {
+  color: #2b2e8b;
+  text-decoration: underline;
+}
+
+.download-prompt-android {
+  color: #22c993;
+  text-decoration: underline;
+}
+
+.download-prompt-signup {
+  color: #22c993;
+  text-decoration: underline;
+}
+
+.download-prompt-cart {
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+.download-prompt-tag {
+  position: absolute;
+  right: 18px;
+  top: 10px;
+  font-size: 2em;
+  opacity: 0.18;
+  pointer-events: none;
+}

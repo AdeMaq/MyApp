@@ -1,0 +1,30 @@
+
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+
+.admin-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.admin-card {
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.admin-card:hover {
+  background-color: #e6ffee;
+  border: 1px solid #28a745;
+  transform: translateY(-4px);
+}
+
+.admin-link {
+  text-decoration: none;
+  color: inherit;
+}

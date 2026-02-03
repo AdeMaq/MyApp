@@ -1,0 +1,33 @@
+.sidebarContainer {
+  z-index: 10;
+  font-family: Arial, sans-serif;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+li {
+  font-size: 14px;
+  font-family: sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:31.3px;
+  width:100%;
+}
+
+li:hover,
+li.bg-success-subtle {
+  background-color: #d4f9e6;
+}
+
+.arrow {
+  font-weight: bold;
+  color: rgb(11, 11, 11);
+  margin-left: 6px;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none; 
+}
+

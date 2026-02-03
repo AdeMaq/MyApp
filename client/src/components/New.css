@@ -1,0 +1,53 @@
+.new-section {
+  padding: 20px 0;
+}
+
+.category-filters button {
+  border-radius: 8px;
+}
+
+.category-filters .btn-success {
+  background-color: #059669;
+  border: none;
+}
+
+.category-filters .btn-light {
+  border: 1px solid #ccc;
+}
+
+.new-carousel {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.carousel-button.left {
+  left: 0;
+}
+
+.carousel-button.right {
+  right: 0;
+}
+
+.product-card {
+  width: 200px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.heart-svg {
+  fill: #1BAB6E;
+}

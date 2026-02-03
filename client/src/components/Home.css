@@ -1,0 +1,16 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1264px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.rightContent > * {
+  margin-bottom: 10px;
+}
+
+.box{
+  padding-left: 32px;
+  padding-right: 32px;
+}

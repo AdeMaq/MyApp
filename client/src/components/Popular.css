@@ -1,0 +1,35 @@
+
+
+.popular-link {
+  color: #212529; /* default text-dark */
+  text-decoration: none;
+}
+
+.popular-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f2f3f8;
+  border: 2px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.popular-link:hover .popular-circle {
+  border-color: #28a745; /* Bootstrap green */
+}
+
+.popular-link h3 {
+  font-size: 0.9rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.popular-link:hover h3 {
+  color: #28a745; /* green on hover */
+}
+

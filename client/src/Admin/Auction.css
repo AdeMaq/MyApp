@@ -1,0 +1,38 @@
+.top-strip {
+  width: 100%;
+  height: fit-content;
+  background-color: #53f056;
+}
+
+.header-main {
+  width: 100%;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  font-family: Arial, sans-serif;
+}
+
+.header-wrapper {
+  max-width: 1264.67px;
+  height: 88px;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: white;
+}
+
+.header-content {
+  height: 88px;
+  padding: 0 32px;
+}
+
+.header-left .logo {
+  width: 145.5px;
+  height: 30.31px;
+}
+
+.img {
+  height: 24px;
+  width: 24px;
+}
+
+

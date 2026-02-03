@@ -1,0 +1,84 @@
+.condition-circle {
+  width: 120px;
+  height: 120px;
+  border: 4px solid #e5e5e5;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.condition-circle:hover {
+  border-color: darkgreen;
+  background-color: #d1fae5;
+}
+
+.condition-circle img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.condition-label {
+  font-weight: 500;
+  background: #f4f4f4;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.condition-label:hover{
+    background-color: #d1fae5;
+}
+
+.assured-card {
+  background-color: #d1fae5;
+  border: none;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.assured-link {
+  color: #059669;
+  text-decoration: none;
+}
+
+.assured-link:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  font-size: 24px;
+  color: #059669;
+}
+
+.condition-image {
+  position: relative; 
+}
+
+.condition-tooltip {
+  position: absolute;
+  bottom: 130%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 12px;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.condition-image:hover .condition-tooltip {
+  opacity: 1;
+  visibility: visible;
+}

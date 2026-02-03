@@ -1,0 +1,70 @@
+.brand-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.brand-slider {
+  display: flex;
+  gap: 8px;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.brand-box {
+  min-width: 170px;
+  height: 90px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.brand-box:hover {
+  transform: scale(1.05);
+}
+
+.slider-arrow {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  padding: 0;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-arrow:hover {
+  background-color: black;
+  color: white;
+}
+
+.slider-arrow.left {
+  left: -20px;
+}
+
+.slider-arrow.right {
+  right: -20px;
+}
+
+.price-button {
+  background-color: #d1fae5;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.price-button:hover {
+  background-color: darkgreen;
+  color: white;
+}

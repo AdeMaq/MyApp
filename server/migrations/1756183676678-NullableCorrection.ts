@@ -1,0 +1,18 @@
+import { MigrationInterface, QueryRunner } from "typeorm";
+
+export class NullableCorrection1756183676678 implements MigrationInterface {
+    name = 'NullableCorrection1756183676678'
+
+    public async up(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.query(`ALTER TABLE "favourites" DROP CONSTRAINT "FK_b75b5e4a2475d03acfe11eac1d1"`);
+        await queryRunner.query(`ALTER TABLE "vent_items" ADD "storage" character varying(100) NOT NULL`);
+        await queryRunner.query(`ALTER TABLE "favourites" ADD CONSTRAINT "FK_b75b5e4a2475d03acfe11eac1d1" FOREIGN KEY ("userId") REFERENCES "users"("userId") ON DELETE  CASCADE ON UPDATE NO ACTION`);
+    }
+
+    public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.query(`ALTER TABLE "favourites" DROP CONSTRAINT "FK_b75b5e4a2475d03acfe11eac1d1"`);
+        await queryRunner.query(`ALTER TABLE "vent_items" DROP COLUMN "storage"`);
+        await queryRunner.query(`ALTER TABLE "favourites" ADD CONSTRAINT "FK_b75b5e4a2475d03acfe11eac1d1" FOREIGN KEY ("userId") REFERENCES "users"("userId") ON DELETE CASCADE ON UPDATE NO ACTION`);
+    }
+
+}

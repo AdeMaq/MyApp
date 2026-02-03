@@ -1,0 +1,13 @@
+.footer-link {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 10px;
+  display: block;
+  margin-bottom: 6px;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: rgb(51, 161, 97);
+}
+
